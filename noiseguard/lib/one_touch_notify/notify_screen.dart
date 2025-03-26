@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ReportSelectionScreen extends StatefulWidget {
+  const ReportSelectionScreen({super.key});
+
   @override
   NotifyPage createState() => NotifyPage();
 }
@@ -105,7 +107,7 @@ class NotifyPage extends State<ReportSelectionScreen> {
           ),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.1),
+              color: Color.fromRGBO(0, 0, 0, 0.1),
               blurRadius: 5,
               spreadRadius: 1,
               offset: Offset(0, 3),

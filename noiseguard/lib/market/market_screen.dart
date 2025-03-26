@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:noiseguard/domain/product.dart';
 
 class MarketPage extends StatelessWidget {
   final List<Product> products = [
@@ -45,6 +46,8 @@ class MarketPage extends StatelessWidget {
         rating: 4.8,
         reviews: 27344),
   ];
+
+  MarketPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -105,7 +108,7 @@ class MarketPage extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Color.fromRGBO(0, 0, 0, 0.1),
             blurRadius: 5,
             spreadRadius: 1,
             offset: Offset(0, 3),
@@ -167,22 +170,4 @@ class MarketPage extends StatelessWidget {
       ),
     );
   }
-}
-
-class Product {
-  final String name;
-  final String description;
-  final String price;
-  final String image;
-  final double rating;
-  final int reviews;
-
-  Product({
-    required this.name,
-    required this.description,
-    required this.price,
-    required this.image,
-    required this.rating,
-    required this.reviews,
-  });
 }

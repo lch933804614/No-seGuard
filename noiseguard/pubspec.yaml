@@ -53,15 +53,25 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
-    - assets/lawyer1.jpeg
-    - assets/lawyer2.jpeg
-    - assets/lawyer3.jpeg
-    - assets/lawyer4.jpeg
+    - assets/images/lawyer1.jpeg
+    - assets/images/lawyer2.jpeg
+    - assets/images/lawyer3.jpeg
+    - assets/images/lawyer4.jpeg
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
 
+  fonts:
+    - family: PretendardBold
+      fonts:
+        - asset: assets/fonts/Pretendard-Bold.otf
+    - family: PretendardSemiBold
+      fonts:
+        - asset: assets/fonts/Pretendard-SemiBold.otf
+    - family: PretendardRegular
+      fonts:
+        - asset: assets/fonts/Pretendard-Regular.otf
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
